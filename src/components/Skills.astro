@@ -1,0 +1,50 @@
+---
+import { Icon } from "astro-icon/components"
+
+const skills = [
+  {
+    name: 'Html',
+    icon: 'devicon:html5'
+  },
+  {
+    name: 'React',
+    icon: 'devicon:css3'
+  },
+  {
+    name: 'JavaScript',
+    icon: 'devicon:javascript'
+  },
+  {
+    name: 'React',
+    icon: 'devicon:react'
+  },
+  {
+    name: 'Next',
+    icon: 'devicon:nextjs'
+  },
+  {
+    name: 'Vue',
+    icon: 'devicon:vuejs'
+  },
+  {
+    name: 'Unity',
+    icon: 'devicon:unity'
+  },
+  {
+    name: 'Git',
+    icon: 'devicon:git'
+  },
+  {
+    name: 'Lazy vim',
+    icon: 'simple-icons:lazyvim',
+    color: '#2E7CE8'
+  },
+]
+---
+<div class="bg-[#519872] flex w-full items-center flex-col p-6 gap-8 min-h-[462px]">
+  <h3 class="text-2xl text-black">SKILLS</h3>
+  <div class="flex gap-4"> { skills.map((skill) => (
+    <Icon name={skill.icon} width="64" height="64" color={skill.color} />
+  ))}
+  </div>
+</div>

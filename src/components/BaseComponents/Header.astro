@@ -1,0 +1,36 @@
+---
+import { Icon } from "astro-icon/components";
+
+const links = [
+  {
+    name: "Projects",
+    href: "projects",
+  },
+  {
+    name: "About",
+    href: "about",
+  },
+  {
+    name: "Setup",
+    href: "setup",
+  },
+];
+
+const foo = { a: 1, b: 2 };
+---
+
+<header class="flex w-full py-6 justify-center">
+  <div class="flex justify-between container">
+    <h1 class="text-blue-200 text-2xl"><a href="/">Thales Trombim</a></h1>
+
+    <div class="flex gap-8"> { links.map((item) => ( <a href={item.href}
+      class="relative inline-block group"> <span class="relative z-10">{
+        item.name }</span> <span class="absolute bottom-0 left-0 h-0.5 w-0
+        bg-[#f3a712] transition-all duration-300 group-hover:w-full" ></span>
+    </a>))} </div>
+
+    <div>
+      <Icon name="fluent-emoji-flat:sun" width="32" height="32" />
+    </div>
+  </div>
+</header>
