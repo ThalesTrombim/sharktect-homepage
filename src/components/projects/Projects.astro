@@ -1,0 +1,38 @@
+---
+const featuredProjects = [
+  {
+    title: 'Duck Game List',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec metus est, cursus eget justo eu, scelerisque sagittis velit. Suspendisse in nisl at dolor sollicitudin molestie. Morbi non lacus id mauris elementum tempor at et lectus. Ut vehicula sapien eu orci suscipit, at convallis nisl hendrerit.',
+    url: 'https://www.duckgamelist.com.br/',
+    image: 'https://placehold.co/300x300'
+  },
+  {
+    title: 'Duck Game List',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec metus est, cursus eget justo eu, scelerisque sagittis velit. Suspendisse in nisl at dolor sollicitudin molestie. Morbi non lacus id mauris elementum tempor at et lectus. Ut vehicula sapien eu orci suscipit, at convallis nisl hendrerit.',
+    url: 'https://www.duckgamelist.com.br/',
+    image: 'https://placehold.co/300x300'
+  },
+  {
+    title: 'Duck Game List',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec metus est, cursus eget justo eu, scelerisque sagittis velit. Suspendisse in nisl at dolor sollicitudin molestie. Morbi non lacus id mauris elementum tempor at et lectus. Ut vehicula sapien eu orci suscipit, at convallis nisl hendrerit.',
+    url: 'https://www.duckgamelist.com.br/',
+    image: 'https://placehold.co/300x300'
+  },
+]
+---
+<div class="flex flex-col w-full items-center">
+  <h3 class="text-2xl mb-8">Projects</h3>
+
+  <div class="flex justify-between container"> 
+    { featuredProjects.map((project) => (
+    <div class="flex flex-col items-center gap-4 max-w-[300px] text-center">
+      <img src={project.image} class="rounded"/> 
+      <span class="text-lg">{project.title}</span>
+      <p>{project.description}</p>
+    </div>
+    ))
+    }
+  </div>
+
+  <button class="bg-[#E4572E] py-3 px-16 rounded-2xl mt-20 cursor-pointer hover:brightness-125">See more</button>
+</div>

@@ -1,0 +1,41 @@
+---
+import { Icon } from "astro-icon/components"
+
+const socials = [
+  {
+    value: 'ThalesTrombim',
+    url: '',
+    icon: 'mdi:linkedin'
+  },
+  {
+    value: 'ThalesTrombim',
+    url: '',
+    icon: 'mdi:github'
+  },
+  {
+    value: 'thalestr@outlook.com',
+    url: '',
+    icon: 'mdi:email'
+  },
+  {
+    value: 'Ozolober',
+    url: '',
+    icon: 'mdi:steam'
+  },
+]
+---
+
+<div class="flex flex-col items-center w-full">
+  <h3 class="text-2xl mb-10">Contacts</h3> 
+
+  <div class="flex  gap-12">
+    {
+    socials.map((social) => (
+    <div class="flex items-center gap-4">
+      <Icon name={social.icon} width="36" height="36" />
+      <span class="text-lg">{social.value}</span>
+    </div>
+    ))
+    }
+  </div>
+</div>

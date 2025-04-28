@@ -3,6 +3,8 @@ import DevCard from "../components/DevCard.astro";
 import Layout from "../layouts/Layout.astro";
 import DevResume from  "../components/DevResume.astro";
 import Skills from "../components/Skills.astro";
+import Projects from "../components/projects/Projects.astro";
+import Socials from "../components/Socials.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -18,6 +20,14 @@ import Skills from "../components/Skills.astro";
 
     <div class="mt-14 flex w-full">
       <Skills />
+    </div>
+
+    <div class="my-14 flex w-full">
+      <Projects />
+    </div>
+
+    <div class="my-14 flex w-full">
+      <Socials />
     </div>
   </div>
 </Layout>
